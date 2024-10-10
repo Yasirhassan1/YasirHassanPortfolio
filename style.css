@@ -1,0 +1,707 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --themeColor: #141630;
+    --tipBoxColor: #665EF7;
+    --highlightColor: #00ff2a;
+}
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--themeColor);
+    width: 100vw;
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    
+    
+}
+.alignCenter{
+    align-items: center;
+}
+.justifyCenter{
+    justify-content: center;
+}
+
+.flexMain{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flexCross{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+.parentContainer{
+    /* background-color: aqua; */
+    min-width: 100%;
+    min-height: 100%;
+    justify-content: center;
+    
+}
+
+.parentContainer .childContainer{
+   width: 90%;
+   max-height: 100%;
+   /* background-color: blue; */
+  margin-bottom: 4rem;
+  
+   gap: 2rem;
+
+
+}
+
+
+
+
+.parentContainer header{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid white;
+    position: fixed;
+    background-color:#141630af;
+    backdrop-filter: blur(10px);
+    z-index: 3;
+ 
+}
+header nav{
+    height: 100%;
+}
+header nav ul{
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    gap: 1rem;
+    
+   
+}
+#menu{
+    display: none;
+}
+
+header nav .sideBar{
+    display: none;
+}
+
+header nav ul .headRightContainer{
+    gap: 2rem;
+}
+
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+    border-bottom: 2px solid transparent;
+}
+header nav ul a{
+    text-decoration: none;
+    color: white;
+    transition: 0.2s ease;
+}
+
+header nav ul #home{
+    color: var(--highlightColor);
+}
+
+
+main{
+    /* margin-top: 10rem; */
+    gap: 3.5rem;
+    /* background-color: brown; */
+   
+}
+
+main .heroSection{
+    align-items: center;
+     font-size: 22px;
+    justify-content: space-evenly;
+    /* background-color: #efbf04; */
+   padding-top: 10rem;
+    
+    
+}
+main .heroSection  span{
+   color: var(--highlightColor);
+}
+main .heroSection .heroLeftContainer{
+    gap: 2rem;
+}
+button{
+    width: fit-content;
+}
+
+/* main .heroSection .heroRightContainer img{
+    width: 25vw;
+    border-left: 5px solid var(--highlightColor);
+    border-bottom: 5px solid var(--highlightColor);
+    border-radius: 5rem 10rem 10rem 1rem;
+    padding: 0.5rem;
+    transition: 0.2s ease;
+   
+} */
+
+main .heroSection .heroRightContainer img{
+    width: 25vw;
+    /* border: 3px solid var(--highlightColor); */
+background-image: url('photoo.png');
+background-size: cover;
+background-repeat: no-repeat;
+
+border-bottom-left-radius: 3rem;
+border-bottom-right-radius: 3rem;
+border-top-right-radius: 2rem;
+
+transition: 0.2s ease;
+   
+}
+
+main .heroSection .heroRightContainer img:hover{
+
+   transition: 0.2s ease;
+   box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.594);
+   transform: scale(1.05);
+}
+
+
+
+header nav ul a:hover{
+ transition: 0.2s ease;
+color: var(--highlightColor);
+border-bottom: 2px solid var(--highlightColor);
+border-radius: 1px;
+}
+
+
+.btnShape{
+    border: 2px solid var(--highlightColor);
+    background: none;
+    padding: 1rem 2rem;
+   color: white;
+    font-weight: 600;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btnShape:hover{
+    transition: 0.2s ease;
+    border: 2px solid transparent;
+    color: black;
+    background-color: var(--highlightColor);
+    box-shadow: 0 0 20px 2px var(--highlightColor);
+}
+.childContainer  i{
+    font-size: 3rem;
+    transition: 0.2s ease;
+    color: white;
+}
+
+.childContainer  i:hover{
+    transform: scale(1.25);
+    color: var(--highlightColor);
+    
+}
+.gap1{
+    gap: 1rem;
+}
+.gap2{
+    gap: 2rem;
+}
+hr{
+    background-color: black;
+}
+main .educationSection{
+    /* background-color: blueviolet; */
+}
+
+main .educationSection .educationBoxContainer{
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+main .educationSection .educationBoxContainer .educationBox{
+    width: 20rem;
+    height: 25rem;
+    background-color: #1c213d;
+    border-radius: 1rem;
+    transition: 0.2s ease;
+    
+}
+
+main .educationSection .educationBoxContainer .educationBox:hover{
+    transition: 0.2s ease;
+    transform: scale(1.05);
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.372);
+}
+
+main .educationSection .educationBoxContainer .educationBox .boxWrapper{
+    padding: 1rem;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+    
+
+}
+
+main .educationSection .educationBoxContainer .round{
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--themeColor);
+    border-radius: 50%;
+    border: 3px solid var(--highlightColor);
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+main .educationSection i{
+    color: var(--highlightColor);
+    font-size: 1.3rem;
+}
+
+main .educationSection .educationBoxContainer .progressBar{
+   height: 1.5rem;
+   width: 100%;
+   border-radius: 1rem;
+   background-color: white;
+
+}
+
+main .educationSection .educationBoxContainer .progressBar .progressShape{
+    height: 1.5rem;
+    border-radius: 1rem;
+   
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: 500;
+    transition: 0.2s ease;
+ }
+
+ main .educationSection .educationBoxContainer #matricStatus #matBar{
+    background-color: var(--highlightColor);
+   width: 89%;
+ }
+
+ main .educationSection .educationBoxContainer #interStatus #interBar{
+    background-color: rgb(132, 239, 10);
+    width: 70%;
+  }
+
+  main .educationSection .educationBoxContainer #currentStatus #currentBar{
+    background-color: var(--highlightColor);
+    width: 84%;
+  }
+ main .educationSection .educationBoxContainer .educationBox .progressBar .progressShape:hover{
+    transition: 0.2 ease;
+    box-shadow: 0 0 20px 0px var(--highlightColor);
+ }
+main .skillSection .skillContainer{
+    justify-content: space-between;
+  
+}
+ main .skillSection img{
+    width: 5rem;
+    height: 5rem;
+    transition: 0.2s ease;
+ }
+
+ main .skillSection img:hover{
+    transform: scale(1.07);
+    transition: 0.2s ease;
+ }
+main .skillSection .usingNow{
+    gap: 2rem;
+}
+
+main .skillSection .skillContainer .usingNow .iconItem{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 140px;
+     background-color: var(--tipBoxColor);
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+
+    /* Positioning the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position above the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Optional: Add a fade-in effect */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Tooltip arrow */
+.tooltip::after {
+    content: "";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--tipBoxColor) transparent transparent transparent;
+   
+   
+}
+
+
+/* Show the tooltip text when hovering over the icon */
+.iconItem:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.2s ease;
+
+}
+main .portfolioSection{
+    /* background-color: aqua; */
+    width: 100%;
+}
+main .portfolioSection .portfolioCoding{
+    gap: 2rem;
+}
+
+main .portfolioSection .gridContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px 200px 300px;
+    /* grid-template-rows: repeat(2, 300px); */
+    gap: 1rem;
+}
+main .portfolioSection .gridContainer .pic{
+     background-size: cover;
+     border-radius: 1rem;
+     box-shadow: 5px 5px 15px 3px rgba(0, 0, 0, 0.521);
+     transition: 0.2s ease;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+
+main .portfolioSection .gridContainer .pic:hover{
+    transition: 0.2s ease;
+    transform: scale(1.06);
+    background-position: bottom;
+   
+  
+}
+main .portfolioSection .portfolioCoding .codingTopContainer{
+    width: 100%;
+    gap: 2rem;
+}
+
+.cloneTag{
+    text-decoration: underline;
+    color: yellow;
+    background-color: #141630;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+    transition: 0.2s ease;
+}
+.clone:hover .cloneTag{
+    transition: 0.2s ease;
+   display: block;
+
+  }
+
+
+
+main .contactSection input{
+background: #1C213D;
+/* border: 1px solid white; */
+padding: 1rem;
+border-radius: 1rem;
+width: 100%;
+border: none;
+color: white;
+font-size: 1rem;
+
+
+}
+
+textarea{
+    background: #1C213D;
+    /* border: 1px solid white; */
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    border: none;
+    color: white;
+    font-size: 1rem;
+}
+main .contactSection .inputContainer{
+    justify-content: space-between;
+   
+    
+}
+
+input:focus{
+    transition: 0.2s ease;
+   outline: none;
+   transform: scale(1.02);
+}
+
+textarea:focus{
+    transition: 0.2s ease;
+    outline: none;
+    transform: scale(1.02);
+}
+
+main .contactSection .inputContainer .contactRightSide{
+width: 60%;
+}
+
+main .contactSection form{
+    gap: 1rem;
+}
+main .contactSection .inputContainer .socialContainer{
+    align-self: flex-start;
+}
+
+main .contactSection .inputContainer .contactLeftSide{
+    width: 40%;
+text-align: center;
+justify-content: space-evenly;
+}
+footer{
+
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+
+   
+}
+/* main .portfolioSection .projectMenu{
+    justify-content: center;
+    gap: 3rem;
+    font-size: 1.5rem;
+    
+} */
+
+@media (max-width: 600px){
+  
+    header nav ul .headRightContainer{
+        display: none;
+    }
+   
+    #menu{
+        display: block;
+    }
+   main .heroSection{
+    flex-direction: column-reverse;
+    gap: 2rem;
+    /* background-color: #00ff2a; */
+    padding-top: 8rem;
+ 
+   }
+
+
+   main .heroSection .heroLeftContainer .upperSide{
+    text-align: center;
+   
+   }
+main .heroSection .heroLeftContainer .lowerSide{
+    width: 100%;
+}
+   main .socialContainer{
+    
+    justify-content: space-evenly;
+   
+   }
+
+   main .heroSection .heroLeftContainer{
+    align-items: center;
+    
+   }
+
+   main .heroSection .heroRightContainer{
+    align-items: center;
+ 
+   }
+
+
+   main .heroSection .heroRightContainer img{
+    width: 70%;
+    background-image: url('photoo.png');
+background-size: cover;
+background-repeat: no-repeat;
+
+border-bottom-left-radius: 1rem;
+border-bottom-right-radius: 1rem;
+border-top-right-radius: 1rem;
+
+transition: 0.2s ease;
+     
+   
+}
+
+    main .educationSection{
+        /* background-color: #00ff2a; */
+        align-items: center;
+    }
+    main .educationSection .educationBoxContainer{
+        flex-direction: column;
+        align-items: center;
+    }
+    main .educationSection .educationBoxContainer .educationBox{
+        width: 90%;
+        height: 30rem;
+        background-color: #1c213d;
+        border-radius: 1rem;
+        transition: 0.2s ease;
+        font-size: 20px;
+        
+    }
+    main .educationSection .educationBoxContainer .educationBox .boxWrapper .progressBar{
+        height: 2rem;
+       
+    }
+    main .educationSection .educationBoxContainer .educationBox .boxWrapper .progressBar .progressShape{
+        height: 2rem;
+       
+    }
+    main .skillSection{
+        width: 100%;
+        align-items: center;
+    }
+
+    main .skillSection .skillContainer{
+        flex-direction: column;
+       gap: 3rem;
+       width: 100%;
+    }
+    main .skillSection .skillContainer .usingNow .usingSkillTopContainer, .usingSkillBottomContainer{
+        width: 100%;
+     justify-content: space-evenly;
+     gap: 2rem;
+    }
+
+    main .skillSection .skillContainer .usingNow .learningSkillTopContainer, .learningSkillBottomContainer{
+        width: 100%;
+     justify-content: space-evenly;
+    }
+    main .skillSection .skillContainer .usingNow .otherSkillTopContainer, .otherSkillBottomContainer{
+        width: 100%;
+     justify-content: space-evenly
+    }
+
+    main .portfolioSection{
+        text-align: center;
+    }
+
+    main .portfolioSection .gridContainer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 300px 300px 300px 200px 200px 200px 300px 300px 300px;
+        /* grid-template-rows: repeat(2, 300px); */
+        gap: 2rem;
+    }
+
+main .contactSection{
+    gap: 2rem;
+    align-items: center;
+   
+}
+    main .contactSection .inputContainer{
+        flex-direction: column;
+       gap: 2rem;
+      
+    }
+
+    main .contactSection .inputContainer .contactLeftSide{
+        width: 100%;
+        flex-direction:row;
+       gap: 1rem;
+        flex-wrap: wrap;
+        
+    }
+    main form{
+     
+        align-items: center;
+    }
+
+    main .contactSection .inputContainer .contactRightSide{
+        width: 100%;
+    }
+
+ main .contactSection .inputContainer .contactRightSide form .socialContainer{
+    width: 100%;
+ }
+
+ 
+main .contactSection input{
+    height: 5rem;
+    font-size: 1.3rem;
+    
+    
+    }
+    
+    textarea{    
+        font-size: 1.3rem;
+       
+    }
+
+    button{
+       height: 4rem;
+        width: 90%;
+    }
+.fa-brands{
+    font-size: 3rem;
+}
+
+
+header nav .sideBar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: #1C213D;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem;
+    gap: 3rem;
+    transition: 0.2s ease;
+    font-size: larger;
+    box-shadow: -10 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+header nav .sideBar li{
+    width: 100%;
+}
+
+header nav .sideBar li a{
+    width: 100%;
+}
+
+
+
+
+}
