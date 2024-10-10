@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="parentContainer flexMain">
+      <div class="childContainer flexCross">
+        <header>
+          <nav>
+            <ul id="sideBar" class="flexCross sideBar">
+             <img id="exit" src="cross.svg" alt="">
+                <li><a id="hoe" href="#home">Home</a></li>
+               
+                <li><a href="#education">Education</a></li>
+                
+                <li><a href="#skill">Skills</a></li>
+               
+                <li><a href="#portfolio">Portfolio</a></li>
+                
+                <li><a href="#demo">Live Demo</a></li>
+                
+                <li><a href="#contact">Contact</a></li>
+              
+            </ul>
+
+            <ul class="flexMain">
+              <h3><a href="#home">Yasir's Portfolio</a></h3>
+              <div class="headRightContainer flexMain">
+                <li><a id="hoe" href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+
+              </div>
+              <img width="30px" id="menu" src="menu.svg" alt="">
+            </ul>
+          </nav>
+        </header>
+        <main class="flexCross">
+          <section id="home" class="heroSection flexMain">
+            <div class="heroLeftContainer flexCross">
+              <div class="upperSide">
+                <h1>Hi, I am <span>Yasir Hassan</span></h1>
+                <h3>
+                  and I am a passionate <br />
+                  <span id="element"></span>
+                </h3>
+              </div>
+              <button class="btnShape">DOWNLOAD CV</button>
+              <div class="lowerSide flexCross">
+                <div class="socialContainer flexMain gap1">
+                  <a target="_blank" href="https://github.com/Yasirhassan1"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                  <a target="_blank" href="https://www.linkedin.com/in/yasir-hassan-9a14432b1/"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                  <a target="_blank" href="https://www.facebook.com/yasu.hassan.79"
+                    ><i class="fa-brands fa-facebook"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div class="heroRightContainer flexCross">
+              <img src="profile.svg" alt="" />
+            </div>
+          </section>
+          <hr/>
+          <section id="education" class="educationSection flexCross gap1">
+            <h1>EDUCATION</h1>
+            <div class="educationBoxContainer flexMain">
+              <div class="educationBox">
+                <div class="boxWrapper flexCross">
+                  <div class="round flexMain">
+                    <img src="matri.svg" alt="" />
+                  </div>
+                  <div class="eduHead flexMain gap1">
+                    <h3>MATRICULATION</h3>
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <p>
+                    Completed Matriculation from Army Public School and College
+                    Skardu. -2021
+                  </p>
+                  <div id="matricStatus" class="progressBar">
+                    <div id="matBar" class="progressShape flexCross">89%</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="educationBox">
+                <div class="boxWrapper flexCross">
+                  <div class="round flexMain">
+                    <img src="inter.svg" alt="" />
+                  </div>
+                  <div class="eduHead flexMain gap1">
+                    <h3>INTERMEDIATE</h3>
+                    <i class="fa-solid fa-circle-check"></i>
+                  </div>
+                  <p>
+                    Completed Intermediate in <span>Computer Science</span> from
+                    Public School and College Skardu. -2023
+                  </p>
+                  <div id="interStatus" class="progressBar">
+                    <div id="interBar" class="progressShape flexCross">70%</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="educationBox">
+                <div class="boxWrapper flexCross">
+                  <div class="round flexMain">
+                    <img src="current.svg" alt="" />
+                  </div>
+                  <div class="eduHead flexMain gap1">
+                    <h3>Current Education</h3>
+                  </div>
+                  <p>
+                    I am currently enrolled in Bachelors in Computer Science
+                    from University of Balitistan in 3rd semester.
+                  </p>
+                  <div id="currentStatus" class="progressBar">
+                    <div id="currentBar" class="progressShape flexCross">
+                      3.2 CGPA
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <hr />
+
+          <section
+            id="skill"
+            class="skillSection flexCross gap1 justifyContentSpaceBetween"
+          >
+            <h1>SKILLS</h1>
+
+            <div class="skillContainer flexMain">
+              <div class="usingNow flexCross alignCenter">
+                <h3>USING NOW</h3>
+                <div class="usingSkillTopContainer flexMain gap1">
+                  <div class="iconItem flexCross gap1 alignCenter">
+                    <img src="html.svg" alt="" />
+                    <h4>HTML</h4>
+                  </div>
+                  <div class="iconItem flexCross alignCenter gap1">
+                    <img src="css.svg" alt="" />
+                    <h4>CSS</h4>
+                  </div>
+                  <div class="iconItem flexCross alignCenter gap1">
+                    <img src="js.svg" alt="" />
+                    <h4>JavaScript</h4>
+                    <div id="tooltipscript" class="tooltip">
+                      Strong Foundation In Multiple Programming Languages.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="usingSkillBottomContainer flexMain gap2">
+                  <div class="iconItem flexCross alignCenter gap1">
+                    <img src="react.svg" alt="" />
+                    <h4>REACT</h4>
+                  </div>
+                  <div class="iconItem flexCross alignCenter gap1">
+                    <img src="figma-icon.svg" alt="" />
+                    <h4>FIGMA</h4>
+                  </div>
+                  <div class="iconItem flexCross alignCenter gap1">
+                    <img src="git-icon.svg" alt="" />
+                    <h4>GIT</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="usingNow flexCross alignCenter">
+                <h3>LEARNING</h3>
+                <div class="learningSkillTopContainer flexMain gap2">
+                  <div class="iconItem flexCross alignCenter gap1">
+                    <img src="node.svg" alt="" />
+                    <h4>NODE.JS</h4>
+                  </div>
+                  <div class="iconItem flexCross alignCenter gap1">
+                    <img src="sql.svg" alt="" />
+                    <h4>MY SQL</h4>
+                  </div>
+                </div>
+
+                <div class="learningSkillBottomContainer flexMain gap2">
+                  <div class="iconItem flexCross alignCenter gap1">
+                    <img src="mongo.svg" alt="" />
+                    <h4>MONGO DB</h4>
+                  </div>
+                  <div class="iconItem flexCross alignCenter gap1">
+                    <img src="type.svg" alt="" />
+                    <h4>TYPESCRIPT</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="usingNow flexCross alignCenter">
+                <h3>OTHER SKILLS</h3>
+                <div class="otherSkillTopContainer flexMain gap2">
+                  <div class="iconItem flexCross alignCenter gap1">
+                    <img src="c++.svg" alt="" />
+                    <h4>C++</h4>
+                    <div id="toolTipC" class="tooltip">
+                      Strong Foundation in Data Structure & Algorithms
+                    </div>
+                  </div>
+                  <div class="iconItem flexCross alignCenter gap1">
+                    <img src="event.svg" alt="" />
+                    <h4>EVENT ORGANIZER</h4>
+                    <div id="toolTipEvent" class="tooltip">
+                      Organize Multiple Events at the University.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="otherSkillBottomContainer flexMain gap2">
+                  <div class="iconItem flexCross alignCenter gap1">
+                    <img src="presentation.png" alt="" />
+                    <h4>PRESENTATION</h4>
+                    <div id="toolTipPre" class="tooltip">
+                      Project based Presentation
+                    </div>
+                  </div>
+                  <div class="iconItem flexCross alignCenter gap1">
+                    <img src="prompt.png" alt="" />
+                    <h4>PROMPT ENGINEERING</h4>
+                    <div id="toolTipPrompt" class="tooltip">
+                      Excellent Communication skills with AI
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <hr />
+          <section id="portfolio" class="portfolioSection flexCross gap1">
+            <h1>PORTFOLIO</h1>
+            <!-- <div class="projectMenu flexMain">
+           <a href="">Front-End-Projects</a>
+           <a href="">Coding Projects</a>
+          </div> -->
+          <!-- <div class="portfolioCoding flexCross">
+            <div class="codingTopContainer flexMain">
+             <img id="ball3" src="balls/ball3.svg" alt="">
+             <img id="ball1" src="balls/ball1.svg" alt="">
+             <img id="ball6" src="balls/ball6.svg" alt="">
+             <img id="ball5" src="balls/ball5.svg" alt="">
+             <img id="ball2" src="balls/ball2.svg" alt="">
+             <img id="ball4" src="balls/ball4.svg" alt="">
+            </div>
+            <div class="codingBottomContainer flexMain gap1">
+              <button id="sortAscendingBtn" class="btnShape">Sort Ascending</button>
+              <button class="btnShape">Sort Decending</button>
+            </div>
+
+          </div> -->
+            <div class="gridContainer">
+              <div class="pic" style="background-image: url('pic1.png');"></div>
+              <div class="pic clone" style="background-image: url('pic2.png');">
+                <h3 class="cloneTag">Cloned</h3>
+              </div>
+
+              <div class="pic clone" style="background-image: url('pic3.PNG');">
+                <h3 class="cloneTag">Cloned</h3>
+              </div>
+              <div class="pic" style="background-image: url('pic4.PNG');"></div>
+              <div class="pic" style="background-image: url('pic5.png');"></div>
+              <div class="pic" style="background-image: url('pic6.png');"></div>
+              <div class="pic clone" style="background-image: url('pic7.png');">
+                <h3 class="cloneTag">Cloned</h3>
+              </div>
+              <div class="pic clone" style="background-image: url('pic8.png');"></div>
+              <div class="pic clone" style="background-image: url('pic9.png');"></div>
+            </div>
+          </section>
+          <hr>
+          <section id="contact" class="contactSection flexCross gap1">
+            <h1>CONTACT ME</h1>
+            <div class="inputContainer flexMain">
+              <div class="contactLeftSide flexCross">
+                <div class="wrap">
+                <img src="phone.svg" alt="">
+                <p>03554229637</p>
+              </div>
+                 <div class="wrap">
+                <img src="email.svg" alt="">
+                <p>yasuhassan7896@gmail.com</p>
+              </div>
+              </div>
+              <div class="contactRightSide flexCross gap1">
+                <form class="flexCross" action="https://formspree.io/f/mvgoplwl" method="post">
+              <input type="text" placeholder="Enter Your Name" name="Name"/>
+              <input type="email" placeholder="Enter Your Email" name="Email Address" required/>
+              <input type="number" placeholder="Enter Your Ph No" name="Phone No"/>
+              <textarea name ="Message" id="" rows="8" placeholder="Type Your Message Here..." required></textarea>
+             
+              <button type="submit" class="btnShape">SEND MESSAGE</button>
+            </form>
+            </div>
+            </div>
+          </section>
+        </main>
+        <hr>
+        <footer class="flexMain">
+          <p>&copy; 2024 Yasir Hassan. All rights reserved.</p>
+          <div class="socialContainer flexMain gap1">
+            <a target="_blank" href="https://github.com/Yasirhassan1"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a target="_blank" href="https://www.linkedin.com/in/yasir-hassan-9a14432b1/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a target="_blank" href="https://www.facebook.com/yasu.hassan.79"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </div>
+        </footer>
+        <hr>
+      </div>
+    </div>
+   
+     <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+
+    <script src="https://files.bpcontent.cloud/2024/10/07/14/20241007143239-1UAIHCIS.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
