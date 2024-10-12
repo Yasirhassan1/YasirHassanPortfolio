@@ -178,6 +178,12 @@ main .heroSection .heroRightContainer img:hover{
    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.594);
    transform: scale(1.05);
 }
+main .heroSection .heroLeftContainer .downloadBtnLink{
+   padding: 1rem;
+   
+    text-decoration: none;
+    color: white;
+}
 
 
 
