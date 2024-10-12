@@ -13,6 +13,9 @@ html{
     font-size: 16px;
     scroll-behavior: smooth;
 }
+h1{
+    font-size: 2rem;
+}
 body{
     background-color: var(--themeColor);
     width: 100vw;
@@ -121,6 +124,10 @@ main{
     gap: 3.5rem;
     /* background-color: brown; */
    
+   
+}
+h1{
+    text-align: center;
 }
 
 main .heroSection{
@@ -141,6 +148,9 @@ main .heroSection .heroLeftContainer{
 button{
     width: fit-content;
 }
+p{
+    color: #979797;
+}
 
 /* main .heroSection .heroRightContainer img{
     width: 25vw;
@@ -155,13 +165,8 @@ button{
 main .heroSection .heroRightContainer img{
     width: 25vw;
     /* border: 3px solid var(--highlightColor); */
-background-image: url('photoo.png');
-background-size: cover;
-background-repeat: no-repeat;
 
-border-bottom-left-radius: 3rem;
-border-bottom-right-radius: 3rem;
-border-top-right-radius: 2rem;
+border-radius: 60%;
 
 transition: 0.2s ease;
    
@@ -200,16 +205,16 @@ border-radius: 1px;
     border: 2px solid transparent;
     color: black;
     background-color: var(--highlightColor);
-    box-shadow: 0 0 20px 2px var(--highlightColor);
+    /* box-shadow: 0 0 10px 2px var(--highlightColor); */
 }
 .childContainer  i{
-    font-size: 3rem;
+    font-size: 2.5rem;
     transition: 0.2s ease;
     color: white;
 }
 
 .childContainer  i:hover{
-    transform: scale(1.25);
+    transform: scale(1.10);
     color: var(--highlightColor);
     
 }
@@ -224,11 +229,14 @@ hr{
 }
 main .educationSection{
     /* background-color: blueviolet; */
+  text-align: center;
+  
 }
 
 main .educationSection .educationBoxContainer{
     justify-content: space-between;
     gap: 1rem;
+    text-align: center;
 }
 
 main .educationSection .educationBoxContainer .educationBox{
@@ -379,6 +387,7 @@ main .skillSection .skillContainer .usingNow .iconItem{
 main .portfolioSection{
     /* background-color: aqua; */
     width: 100%;
+    text-align: center;
 }
 main .portfolioSection .portfolioCoding{
     gap: 2rem;
@@ -504,7 +513,9 @@ footer{
 } */
 
 @media (max-width: 600px){
-  
+  h1{
+    font-size: 1.8rem;
+  }
     header nav ul .headRightContainer{
         display: none;
     }
@@ -547,15 +558,7 @@ main .heroSection .heroLeftContainer .lowerSide{
 
    main .heroSection .heroRightContainer img{
     width: 70%;
-    background-image: url('photoo.png');
-background-size: cover;
-background-repeat: no-repeat;
-
-border-bottom-left-radius: 1rem;
-border-bottom-right-radius: 1rem;
-border-top-right-radius: 1rem;
-
-transition: 0.2s ease;
+     transition: 0.2s ease;
      
    
 }
@@ -625,11 +628,14 @@ transition: 0.2s ease;
 main .contactSection{
     gap: 2rem;
     align-items: center;
+    width: 100%;
+  
    
 }
     main .contactSection .inputContainer{
         flex-direction: column;
        gap: 2rem;
+       width: 100%;
       
     }
 
@@ -641,7 +647,7 @@ main .contactSection{
         
     }
     main form{
-     
+    
         align-items: center;
     }
 
@@ -658,6 +664,7 @@ main .contactSection input{
     height: 5rem;
     font-size: 1.3rem;
     
+   
     
     }
     
