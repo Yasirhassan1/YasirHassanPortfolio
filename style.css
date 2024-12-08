@@ -129,16 +129,13 @@ main{
 h1{
     text-align: center;
 }
-main .heroSection h1{
-    text-align: left;
-}
 
 main .heroSection{
     align-items: center;
      font-size: 22px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     /* background-color: #efbf04; */
-   padding-top: 8rem;
+   padding-top: 10rem;
     
     
 }
@@ -151,18 +148,6 @@ main .heroSection .heroLeftContainer{
 button{
     width: fit-content;
 }
-
-main .heroSection .heroLeftContainer{
-    width: 50%;
-    gap: 2rem;
-}
-main .heroSection .heroLeftContainer p{
-    text-align: justify;
-}
-main .heroSection .heroLeftContainer .upperSide{
-  gap: 1rem;
-}
-
 p{
     color: #979797;
 }
@@ -177,24 +162,6 @@ p{
    
 } */
 
-main .heroSection .heroRightContainer{
-    align-items: center;
-    gap: 2rem;
-}
-main .heroSection .heroRightContainer .socialContainer{
-    width: 100%;
-    justify-content: space-evenly;
-}
-main .heroSection .heroRightContainer button{
-    padding: 1rem 5rem;
-   
-}
-
-main .heroSection .heroRightContainer button a{
-    color: white;
-    text-decoration: none;
-   
-}
 main .heroSection .heroRightContainer img{
     width: 25vw;
     /* border: 3px solid var(--highlightColor); */
@@ -231,14 +198,10 @@ border-radius: 1px;
 .btnShape{
     border: 2px solid var(--highlightColor);
     background: none;
-    padding: 0.9rem 5rem;
-    color: white;
-    font-size: 16px;
+    padding: 1rem 2rem;
+   color: white;
     font-weight: 600;
-    text-align: center;
     border-radius: 2rem;
-    text-decoration: none;
-    width: fit-content;
     cursor: pointer;
     transition: 0.2s ease;
 }
@@ -567,32 +530,11 @@ footer{
         display: block;
     }
    main .heroSection{
-    /* flex-direction: column-reverse; */
+    flex-direction: column-reverse;
     gap: 2rem;
-    width: 100%;
     /* background-color: #00ff2a; */
-    padding-top: 7rem;
+    padding-top: 8rem;
  
-   }
-
-   main .heroSection .heroLeftContainer p{
-    font-size: 16px;
-   }
-
-   main .heroSection .heroRightContainer button{
-    padding: 0.6rem 2rem;
-   
-}
-   main .heroSection .heroLeftContainer{
-    width: 100%;
-    text-align: center;
-   }
-   main .heroSection .heroLeftContainer .upperSide h1{
-    text-align: center;
-   }
-
-   main .heroSection .heroLeftContainer .upperSide p{
-    text-align:center;
    }
 
 
